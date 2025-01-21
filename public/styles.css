@@ -1,0 +1,226 @@
+/* Global styles */
+body {
+  /* font-family: 'Arial', sans-serif; */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Additional CSS for the text beside the logo */
+/* header {
+  display: flex;
+  align-items: center;
+} */
+h5 {
+  padding: 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 80px;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.logo-text {
+  font-size: 20px; /* Adjust the font size as needed */
+  color: black; /* Set the color of the text */
+  margin: auto; /* Center the text vertically */
+}
+ืnav {
+  justify-content: flex-end;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px; /* ปรับระยะห่างระหว่างเมนู */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none; /* เพิ่มบรรทัดนี้เพื่อลบเส้นใต้ลิงก์ */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* ลบระยะห่างของเมนูแรก */
+}
+
+
+/* Banner styles */
+banner {
+  padding-top: 25px;
+  background-image: url('banana_banner.jpg');
+  background-size: cover;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Section styles */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.circle-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Zoom effect on hover for the circle containing banana images */
+.circle-container:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+/* Slideshow styles */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 400px; /* ปรับความสูงของภาพให้ใหญ่ขึ้น */
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Footer styles */
+footer {
+  background-color: #8db600;
+  color: #fff;
+  padding: 20px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+/* Footer styles */
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer .column {
+  flex: 1;
+}
+
+footer .row:first-child {
+  margin-bottom: 20px;
+}
+
+iframe {
+  padding-top: 20px;
+  width: 500px; /* ปรับความกว้างของ iframe */
+  height: 300px; /* ปรับความสูงของ iframe */
+  border-radius: 50px;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column; /* ให้ section เรียงแบบคอลัมน์เมื่อหน้าจอขนาดเล็ก */
+  }
+
+  .column {
+    width: 100%; /* ให้ .column มีความกว้างเต็มขนาดของ section เมื่อหน้าจอขนาดเล็ก */
+  }
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  nav ul li {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  banner {
+    font-size: 20px;
+  }
+
+  .circle-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slideshow-container img {
+    height: 200px; /* Adjust slideshow image height for smaller screens */
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  footer .column {
+    flex: 1;
+    margin-bottom: 20px; /* Add space between columns in smaller screens */
+  }
+
+  iframe {
+    width: 90%;
+    height: 300px;
+  }
+}

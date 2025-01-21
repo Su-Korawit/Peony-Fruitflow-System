@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peony (Fruitflow)</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Additional CSS for the fixed navigation bar */
+    header {
+      font-family: Charmonman;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #ffc107;
+      /* Yellow color */
+      z-index: 1000;
+      /* Ensure it's above other content */
+    }
+
+    body {
+      font-family: 'Charmonman', cursive;
+      padding-top: 60px;
+      /* Adjust body padding to prevent content from being hidden behind the fixed navbar */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Charmonman', cursive;
+    }
+
+    section {
+      padding-top: 30px;
+      /* Adjust section padding to offset for the fixed navbar */
+    }
+  </style>
+</head>
+
+<body id="home">
+
+  <header>
+    <div class="logo">
+      <img src="logos.png" alt="Peony (Fruitflow)">
+      <span class="logo-text">Peony (Fruitflow)</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">หน้าหลัก</a></li>
+        <li style="padding-right: 25px;"><a href="#about">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <banner>
+    <h1>ร้านบ้านกล้วย <a href="https://docs.google.com/forms/d/e/1FAIpQLSe2Gf71mFjyi8pJirL4gBSqiEHLTBSWvPp6NwXkJqdM9rEKXg/viewform?usp=dialog">> สั่งซื้อ <</a></h1>
+  </banner>
+
+  <section id="bananaSection">
+    <div class="column" onclick="goToInformation('banana1_info.html')">
+      <div class="circle-container">
+        <img src="banana1.jpg" alt="Banana 1">
+      </div>
+      <div class="name">กล้วยหอม</div>
+      <hr>
+      <h4 id="bananaHomQuantity">กำลังโหลด...</h4>
+      <h4 id="bananaHomLastUpdated">กำลังโหลด...</h4>
+    </div>
+
+    <div class="column" onclick="goToInformation('banana2_info.html')">
+      <div class="circle-container">
+        <img src="banana2.jpg" alt="Banana 2">
+      </div>
+      <div class="name">กล้วยไข่</div>
+      <hr>
+      <h4 id="bananaKaiQuantity">กำลังโหลด...</h4>
+      <h4 id="bananaKaiLastUpdated">กำลังโหลด...</h4>
+    </div>
+
+    <div class="column" onclick="goToInformation('banana3_info.html')">
+      <div class="circle-container">
+        <img src="banana3.jpg" alt="Banana 3">
+        
+      </div>
+      <div class="name">กล้วยน้ำว้า</div>
+      <hr>
+      <h4 id="bananaNamwhaQuantity">กำลังโหลด...</h4>
+      <h4 id="bananaNamwhaLastUpdated">กำลังโหลด...</h4>
+    </div>
+  </section>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container" id="about">
+    <img src="slideshow_image1.jpg" alt="Slideshow Image 1">
+    <img src="slideshow_image2.jpg" alt="Slideshow Image 2">
+    <img src="slideshow_image3.jpg" alt="Slideshow Image 3">
+  </div>
+
+  <footer>
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="column">
+        <h1>ติดต่อเรา:</h1>
+        <p>128/33 ม. 1 ต. บางเสาธง, อ. บางเสาธง, จ. สมุทรปราการ</p>
+        <p>โทร: 0972198155</p>
+      </div>
+      <!-- <div class="column">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123972.44886645518!2d100.46807380706177!3d13.830689145703165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e283736cf581bd%3A0xeb650d43c4ff0dba!2zNy1FbGV2ZW4g4Liq4Liy4LiC4LiyIOC5gOC4oeC4t-C4reC4h-C4l-C4reC4h-C4mOC4suC4meC4tSAo4LiWLuC4m-C5iuC4reC4m-C4m-C4ueC4peC5iOC4siAzKSAoMDc4MTMp!5e0!3m2!1sen!2sth!4v1710295487024!5m2!1sen!2sth"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> -->
+    </div>
+    <!-- Row 2 -->
+    <div class="row">
+      <div class="column" style="color: black;">
+        <hr>
+        <p style="text-align: center;" alt="กรวิทย์ สุพร">ออกแบบและพัฒนาโดย นายกรวิทย์ สุพร</p>
+        <p style="text-align: center;">หากมีเนื้อหาไม่เหมาะสมหรือละเมิดลิขสิทธิ์ โปรดแจ้งที่ | o.korawitt@gmail.com |
+          09-7197-7296</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const url = 'https://script.google.com/macros/s/AKfycbyCQXCOWYDEZRC0xOClSt19gkcLCJ12F4JplJww93gINBbcnKJZ7jlR-WN8dVcssZHzdg/exec'; // เปลี่ยน URL ตามที่ได้จากขั้นตอนก่อน
+
+    // ฟังก์ชันดึงข้อมูลจาก Google Apps Script
+    function fetchData() {
+      fetch(url)
+        .then(response => response.json()) // แปลงข้อมูลที่ได้เป็น JSON
+        .then(data => {
+          // แสดงข้อมูลกล้วยน้ำว้า
+          document.getElementById('bananaNamwhaQuantity').textContent = "จำนวนกล้วยน้ำว้า: " + data.bananaNamwha.quantity;
+          document.getElementById('bananaNamwhaLastUpdated').textContent = "อัปเดตล่าสุด: " + data.bananaNamwha.lastUpdated;
+
+          // แสดงข้อมูลกล้วยไข่
+          document.getElementById('bananaKaiQuantity').textContent = "จำนวนกล้วยไข่: " + data.bananaKai.quantity;
+          document.getElementById('bananaKaiLastUpdated').textContent = "อัปเดตล่าสุด: " + data.bananaKai.lastUpdated;
+
+          // แสดงข้อมูลกล้วยหอม
+          document.getElementById('bananaHomQuantity').textContent = "จำนวนกล้วยหอม: " + data.bananaHom.quantity;
+          document.getElementById('bananaHomLastUpdated').textContent = "อัปเดตล่าสุด: " + data.bananaHom.lastUpdated;
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          // กรณีไม่สามารถดึงข้อมูลได้
+          document.getElementById('bananaNamwhaQuantity').textContent = 'ไม่สามารถโหลดข้อมูลได้';
+          document.getElementById('bananaNamwhaLastUpdated').textContent = 'ไม่สามารถโหลดข้อมูลได้';
+          document.getElementById('bananaKaiQuantity').textContent = 'ไม่สามารถโหลดข้อมูลได้';
+          document.getElementById('bananaKaiLastUpdated').textContent = 'ไม่สามารถโหลดข้อมูลได้';
+          document.getElementById('bananaHomQuantity').textContent = 'ไม่สามารถโหลดข้อมูลได้';
+          document.getElementById('bananaHomLastUpdated').textContent = 'ไม่สามารถโหลดข้อมูลได้';
+        });
+    }
+
+    // เรียกฟังก์ชันดึงข้อมูลทุกๆ 5 วินาที
+    setInterval(fetchData, 5000); // 5000ms = 5 วินาที
+
+    // เรียกใช้ครั้งแรกเมื่อหน้าเว็บโหลด
+    fetchData();
+
+    function goToInformation(page) {
+      window.location.href = page;
+    }
+
+    // Wait for 2 seconds before redirecting to the home page
+    setTimeout(function () {
+      // Check if the current URL doesn't contain any hash fragment (i.e., it's the initial page load)
+      if (!window.location.hash) {
+        // Redirect to the home page
+        window.location.href = "#home";
+      }
+    }, 10000);
+
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.column', {
+      duration: 1000, // Animation duration (in milliseconds)
+      origin: 'bottom', // Animation origin (you can change this to 'left', 'right', 'top', etc.)
+      distance: '50px', // Animation distance
+      delay: 300, // Delay between elements (in milliseconds)
+      easing: 'ease-in-out', // Animation easing
+      reset: true // Reset reveal when element is not in view
+    });
+
+    // Smooth scrolling to about section when About link is clicked
+    document.querySelector('nav ul li:nth-child(2) a').addEventListener('click', function (event) {
+      event.preventDefault();
+      document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    // Scroll to the section containing the circular images when the page loads
+    window.onload = function () {
+      document.getElementById('bananaSection').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    // Slideshow functionality
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slideshow-container img');
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = 'block';
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    showSlides();
+  </script>
+
+</body>
+
+</html>
